@@ -2,6 +2,7 @@
 #define LISTS_H
 
 #include <stdio.h>
+#include <stdlib.h>
 
 /**
  * struct listint_s - singly linked list
@@ -23,4 +24,4 @@ void free_listint(listint_t *head);
 
 listint_t *insert_node(listint_t **head, int number);
 
-#endif 
+#endif
