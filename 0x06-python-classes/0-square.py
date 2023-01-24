@@ -2,7 +2,7 @@
 class Square:
 """Square Class
 
-This ia an empty class that does not do anything
+This is a class that does not do anything
 
 """
     pass
