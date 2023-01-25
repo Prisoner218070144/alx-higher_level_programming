@@ -15,8 +15,7 @@ class Square:
         :param size: an integer representing the size of the square.
         Default is 0
         :param position: a tuple of 2 positive integers representing
-        the position
-        of the square. Default is (0, 0)
+        the position of the square. Default is (0, 0)
         :raises TypeError: if size is not an integer
         :raises ValueError: if size is less than 0
         :raises TypeError: if position is not a tuple of 2 positive
@@ -45,14 +44,14 @@ class Square:
             raise TypeError("size must be an integer")
         if value < 0:
             raise ValueError("size must be >= 0")
-        self.__size = value
+            self.__size = value
 
     @property
     def position(self):
         """
         Get the position of the square
-        :return: a tuple of 2 positive integers representing the position
-        of the square
+        :return: a tuple of 2 positive integers representing
+        the position of the square
         """
         return self.__position
 
@@ -60,12 +59,12 @@ class Square:
     def position(self, value):
         """
         Set the position of the square
-        :param value: a tuple of 2 positive integers representing the new
-        position of the square
+        :param value: a tuple of 2 positive integers representing
+        the new position of the square
         :raises TypeError: if value is not a tuple of 2 positive integers
         """
-        if not isinstance(value, tuple) or len(value) != 2 or not
-        all(isinstance(i, int) and i >= 0 for i in value):
+        if not isinstance(value, tuple) or len(value) != 2 or
+        not all(isinstance(i, int) and i >= 0 for i in value):
             raise TypeError("position must be a tuple of 2 positive integers")
         self.__position = value
 
